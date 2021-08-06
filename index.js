@@ -3,9 +3,9 @@ var app = express();
 var bodyParser = require('body-parser');
 var request = require('request');
 
-var DESTINATION_VERIFICATION_TOKEN = 'REPLACE_THIS';
-var SOURCE_API_KEY = 'REPLACE_THIS';
-var SOURCE_SECRET = 'REPLACE_THIS';
+var DESTINATION_VERIFICATION_TOKEN = '6647dace-f2fa-423c-8c52-593fa32147fd';
+var SOURCE_API_KEY = 'fa8f7fd4-43ff-468b-910d-a26f17e0c5a9';
+var SOURCE_SECRET = '9N8jNXx9llUCq5eyv2zXqcpNdSEiJi7rKt4EOKJdZa2rtIHLSe7MVmptjMepUe7JBIgxIUhw';
 var authToken, authTokenExpires;
 
 var lowdb = require('lowdb');
@@ -16,7 +16,7 @@ db.defaults({ appointments: [] })
 
 app.use(bodyParser.json());
 
-app.listen(80, function () {
+app.listen(8080, function () {
 	console.log('Server started. Listening on port 80.');
 });
 
